@@ -84,7 +84,7 @@ h3 {
 }
 
 .carousel-img {
-    height: 400px;
+    height: 500px;
     object-fit: cover;
 }
 
@@ -142,15 +142,15 @@ a:focus {
 }
 
 @media screen and (min-width:768px) {
-    h1{
+    h1 {
         font-size: 80px;
     }
 
-    h2{
-        font-size:40px
+    h2 {
+        font-size: 40px
     }
 
-    p{
+    p {
         font-size: 30px;
     }
 
@@ -159,21 +159,64 @@ a:focus {
         object-fit: cover;
     }
 
-    h3{
+    h3 {
         font-size: 40px;
         margin: 40px
     }
 
-    iframe{
+    iframe {
         width: 600px;
         height: 600px;
     }
 
-    h4{
+    h4 {
         font-size: 25px;
     }
 }
 
-@media screen and (min-width:120px) {
-    
+@media screen and (min-width:1200px) {
+    .navbar-nav {
+        margin-left: auto;
+    }
+
+    h1 {
+        font-size: 75px;
+    }
+
+    h2 {
+        font-size: 40px;
+    }
+
+    p {
+        font-size: 30px;
+    }
+
+    #carousel {
+        display: none;
+    }
+
+    .image-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        height: 300px;
+    }
+
+    .custom-img {
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+    }
+
+
+    .image-container {
+        height: 500px;
+    }
+
+    iframe {
+        width: 1000px;
+        height: 600px;
+    }
+
 }
