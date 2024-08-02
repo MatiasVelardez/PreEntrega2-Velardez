@@ -13,6 +13,7 @@ body {
     height: 100vh;
 }
 
+/*BARRA DE NAVEGACION*/
 .navbar-toggler .navbar-toggler-icon {
     background-image: url('data:image/svg+xml;charset=utf8,%3Csvg viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg"%3E%3Cpath stroke="rgba(255, 255, 255, 1)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M4 7h22M4 15h22M4 23h22"/%3E%3C/svg%3E');
     background-size: 100%;
@@ -31,7 +32,6 @@ body {
 .hover-nav {
     border-radius: 10px;
     position: relative;
-
 }
 
 .hover-nav:hover {
@@ -61,6 +61,7 @@ body {
     transform-origin: bottom left;
 }
 
+/*INDEX Y DEMAS HMTL*/
 main {
     flex: 1;
     padding-top: 7rem;
@@ -82,11 +83,51 @@ h3 {
     text-decoration: underline;
     text-decoration-color: #00c3ff;
 }
+
+/*CARROUSEL DE IMAGENES*/
 .carousel-img {
     height: 500px;
     object-fit: cover;
 }
 
+/*BIOGRAFIA*/
+.bio-container{
+    overflow: hidden;
+    padding: 10px;
+}
+
+.bio-jpg{
+    float: left;
+    margin-right: 20px;
+    max-width: 50%; 
+    border-radius: 15px;
+    padding: 10px;
+}
+
+.bio-jpg2{
+    float: right;
+    margin-right: 20px;
+    max-width: 50%; 
+    border-radius: 15px;
+    padding: 10px;
+}
+
+.bio-jpg3{
+    float: center;
+    margin-right: 20px;
+    max-width: 100%; 
+    border-radius: 15px;
+    padding: 10px;
+}
+
+
+
+.bio-container p {
+    flex: 1 1 auto;
+    margin: 0;
+}
+
+/*FOOTER EN MOBILE Y TABLETS*/
 .text-center {
     text-align: center;
 }
@@ -117,7 +158,6 @@ h3 {
 }
 
 ul {
-    list-style: none;
     padding: 0;
 }
 
@@ -153,10 +193,6 @@ a:focus {
         font-size: 30px;
     }
 
-    #images-row{
-        display: none;
-    }
-    
     .carousel-img {
         height: 900px;
         object-fit: cover;
@@ -178,6 +214,7 @@ a:focus {
 }
 
 @media screen and (min-width:1200px) {
+    /*BARRA DE NAVEGACION A LA DERECHA*/
     .navbar-nav {
         margin-left: auto;
     }
@@ -195,10 +232,12 @@ a:focus {
         font-size: 30px;
     }
 
+    /*SE OMITE EL CARROUSEL EN DESKTOP*/
     #carousel {
         display: none;
     }
 
+    /*IMAGENES PARA DESKTOP*/
     .image-container {
         display: flex;
         justify-content: center;
@@ -213,35 +252,38 @@ a:focus {
         height: 100%;
     }
 
-
     .image-container {
         height: 500px;
     }
 
+    /*IFRAME PARA DESKTOP*/
     .iframe-container {
         display: flex;
         justify-content: center;
         align-items: center;
-
         width: 100%;
     }
 
     iframe {
-            width: 10000px;
-            height: 600px;
-
+        width: 10000px;
+        height: 600px;
     }
 
-
+    /*FOOTER PARA DESKTOP*/
     .footer-container {
-            display: flex;
-            justify-content: space-between;
-            align-items: flex-start;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
     }
 
     .col-12 {
-            width: 200px;
+        width: 200px;
     }
+}
 
-
+/*OCULTAR EN MOBILE Y TABLETS LAS IMAGENES PARA DESKTOP*/
+@media (max-width: 1199px) {
+    .img-container {
+        display: none;
     }
+}
