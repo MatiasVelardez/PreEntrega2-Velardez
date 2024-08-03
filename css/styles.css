@@ -91,36 +91,31 @@ h3 {
 }
 
 /*BIOGRAFIA*/
-.bio-container{
+.bio-container {
     overflow: hidden;
     padding: 10px;
 }
 
-.bio-jpg{
+.bio-jpg {
     float: left;
-    margin-right: 20px;
-    max-width: 50%; 
+    max-width: 50%;
     border-radius: 15px;
     padding: 10px;
 }
 
-.bio-jpg2{
+.bio-jpg2 {
     float: right;
-    margin-right: 20px;
-    max-width: 50%; 
+    max-width: 50%;
     border-radius: 15px;
     padding: 10px;
 }
 
-.bio-jpg3{
+.bio-jpg3 {
     float: center;
-    margin-right: 20px;
-    max-width: 100%; 
+    max-width: 100%;
     border-radius: 15px;
     padding: 10px;
 }
-
-
 
 .bio-container p {
     flex: 1 1 auto;
@@ -181,6 +176,12 @@ a:focus {
 }
 
 @media screen and (min-width:768px) {
+
+    .hover-nav,
+    .footer-container {
+        font-size: 25px;
+    }
+
     h1 {
         font-size: 80px;
     }
@@ -211,12 +212,41 @@ a:focus {
     h4 {
         font-size: 25px;
     }
+
+    /*BIOGRAFIA*/
+    .bio-jpg4 {
+        float: center;
+        height: 400px;
+        width: 550px;
+        border-radius: 15px;
+        padding: 10px;
+    }
+
+    .bio-jpg5 {
+        float: left;
+        height: 350px;
+        width: 350px;
+        border-radius: 15px;
+        padding: 10px;
+    }
+
+    .bio-jpg7 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 }
 
 @media screen and (min-width:1200px) {
+
     /*BARRA DE NAVEGACION A LA DERECHA*/
     .navbar-nav {
         margin-left: auto;
+    }
+
+    .hover-nav,
+    .footer-container {
+        font-size: 20px;
     }
 
     h1 {
@@ -268,6 +298,15 @@ a:focus {
         width: 10000px;
         height: 600px;
     }
+
+    /*BIOGRAFIA*/
+    .bio-jpg6 {
+        float: left;
+        max-width: 35%;
+        border-radius: 15px;
+        padding: 10px;
+    }
+
 
     /*FOOTER PARA DESKTOP*/
     .footer-container {

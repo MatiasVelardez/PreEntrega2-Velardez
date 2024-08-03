@@ -29,9 +29,20 @@
                             <a class="nav-link active hover-nav text-white p-1" aria-current="page"
                                 href="../index.html">Home</a>
                         </li>
-                        <li class="nav-item ms-auto pe-2">
-                            <a class="nav-link active hover-nav text-white p-1" aria-current="page"
-                                href="biografia.html">Biografia</a>
+                        <li class="nav-item dropdown ms-auto pe-2">
+                            <a class="nav-link dropdown-toggle hover-nav text-white p-1" href="pages/biografia.html"
+                                role="button" data-bs-toggle="dropdown" aria-expanded="false">Biografia</a>
+                            <ul class="dropdown-menu bg-black ms-auto pe-2">
+                                <li><a class="dropdown-item hover-nav text-white p-1 bg-black hover-dropdown"
+                                        href="pages/biografia.html#quintoEscalon">Quinto Escalon</a></li>
+                                <li><a class="dropdown-item hover-nav text-white p-1 bg-black hover-dropdown"
+                                        href="pages/biografia.html#primeraCancion">Primeras Canciones</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item hover-nav hover-dropdown text-white p-1 bg-black"
+                                        href="pages/biografia.html">Inicio de Pagina</a></li>
+                            </ul>
                         </li>
                         <li class="nav-item dropdown ms-auto pe-2">
                             <a class="nav-link dropdown-toggle hover-nav text-white p-1 " href="mododiablo.html"
@@ -79,17 +90,11 @@
         </nav>
     </header>
 
-
-
-
-
-
-
     <main>
         <div class="bio-container">
             <h1>"El Hombre Sismo"</h1>
-            <img src="../images/biografia/alejo.jpg"
-                alt="Alejo Nahuel Acosta, tambien conocido como YSY A" class="bio-jpg">
+            <img src="../images/biografia/alejo.jpg" alt="Alejo Nahuel Acosta, tambien conocido como YSY A"
+                class="bio-jpg bio-jpg6">
             <p><strong>Alejo Nahuel Acosta</strong>, más conocido artisticamente como <strong>YSY A</strong>, es un
                 rapero argentino nacido el 12 de julio de 1998 en el barrio de Villa Crespo, Buenos Aires. <br> Con
                 padres uruguayos, y el Rio de La Plata recorriendo por toda su sangre, desde muy pequeño se vio
@@ -98,50 +103,54 @@
                 aprenderia a hacer BeatBox y a Improvisar, conocido tambien como Freestylear. <br>En ese momento solo
                 existia una competencia de freestyle, llamada El Halabalusa, ubicada en Claypole, lugar que le quedaba
                 muy lejos a Ysy. Esto lo motivo a crear su propia competencia, que iba a tener lugar en el Parque
-                Rivadavia, localizada en el centro de la ciudad. <br>Con tan solo <strong>13 años</strong> crearia lo que conocemos hoy en dia como
-                <strong>"El Quinto Escalon"</strong></p>
+                Rivadavia, localizada en el centro de la ciudad. <br>Con tan solo <strong>13 años</strong> crearia lo
+                que conocemos hoy en dia como
+                <strong>"El Quinto Escalon"</strong>
+            </p>
         </div>
         <div class="bio-container">
-            <h2>El Quinto Escalon</h2>
+            <h2 id="quintoEscalon">El Quinto Escalon</h2>
             <img src="../images/biografia/quinto escalon.png" alt="Logo del Quinto Escalon" class="bio-jpg2">
-            <p>Creado por YSY A y Muphasa (Matias Berner), un aspirante a musico y presentador de radio, fue el evento de freestyle argentino mas conocido a nivel mundial. Éste dio a conocer a muchos artista que hoy en dia son reconocidos a nivel internacional, como pueden ser Duki, Paulo Londra, Trueno, Wos, etc. <br>Tuvo su primera fecha el 11 de marzo de 2013, de la cual no hay registro, y su finalizacion fue el 11 de noviembre de 2017, con un evento en el Microestadio Malvinas Argentinas. <img src="../images/biografia/quinto.jpg" alt="Foto amplia donde se muestra la competencia con el publico al rededor de los competidores" class="bio-jpg3">
-                 <br>Entre 2014 y 2015 la competencia se establecería como la más importante de Buenos Aires, a la par de que empezarían a aparecer los primeros competidores que luego se volverían claves en la viralización del torneo, como <strong>Wos</strong> o <strong>Acru</strong>. Desde la primera mitad de 2015, la competencia promediaba entre 30 mil y 50 mil espectadores en YouTube. A partir de la segunda mitad, la media subió a 100 mil, principalmente impulsada por la nueva camada de raperos jóvenes que le brindaron un "soplo de aire fresco" a la competencia, como <strong>Duki</strong>, <strong>Dam</strong> o <strong>Dani</strong>. <br>2016 fue un año super importante para esta competicion, ya que se empezo a cobrar la entrada al publico. Esto fue un beneficio enorme porque se pudo mejorar tanto la calidad de los videos de las batallas, como la logistica y la organizacion del mismo evento. En este mismo año tambien aparecieron nuevos raperos como Trueno, Lit Killah o Replik quienes vinieron a reemplazar a la vieja escuela. <br>Pero todo tiene un final, y en 2017 se tomo la decision de mudar la competencio de plazas a escenarios. Esto no gustó mucho en el publico ya que se perdió una de las esencias que hacia especial al evento.
-                 Pasaron los meses y la relacion entre Muphasa e Alejo se iria deteriorando a raiz de varios conflicto. Esto dio pie a que Alejo intentara impulsar su carrera musical bajo du seudónimo YSY A, y Muphasa enbarcandose en su carrera como presentador de radio. <img src="../images/biografia/muphasaysy.jfif" alt="Muphasa a la izquierda, YSY A a la derecha" class="bio-jpg3"> </p>
+            <p>Creado por YSY A y Muphasa (Matias Berner), un aspirante a musico y presentador de radio, fue el evento
+                de freestyle argentino mas conocido a nivel mundial. Éste dio a conocer a muchos artista que hoy en dia
+                son reconocidos a nivel internacional, como pueden ser Duki, Paulo Londra, Trueno, Wos, etc. <br>Tuvo su
+                primera fecha el 11 de marzo de 2013, de la cual no hay registro, y su finalizacion fue el 11 de
+                noviembre de 2017, con un evento en el Microestadio Malvinas Argentinas. <div class="bio-jpg7"> <img
+                    src="../images/biografia/quinto.jpg"
+                    alt="Foto amplia donde se muestra la competencia con el publico al rededor de los competidores"
+                    class="bio-jpg3"></div>
+                <p><br>Entre 2014 y 2015 la competencia se establecería como la más importante de Buenos Aires, a la par de
+                que empezarían a aparecer los primeros competidores que luego se volverían claves en la viralización del
+                torneo, como <strong>Wos</strong> o <strong>Acru</strong>. Desde la primera mitad de 2015, la
+                competencia promediaba entre 30 mil y 50 mil espectadores en YouTube. A partir de la segunda mitad, la
+                media subió a 100 mil, principalmente impulsada por la nueva camada de raperos jóvenes que le brindaron
+                un "soplo de aire fresco" a la competencia, como <strong>Duki</strong>, <strong>Dam</strong> o
+                <strong>Dani</strong>. <br>2016 fue un año super importante para esta competicion, ya que se empezo a
+                cobrar la entrada al publico. Esto fue un beneficio enorme porque se pudo mejorar tanto la calidad de
+                los videos de las batallas, como la logistica y la organizacion del mismo evento. En este mismo año
+                tambien aparecieron nuevos raperos como Trueno, Lit Killah o Replik quienes vinieron a reemplazar a la
+                vieja escuela. <br>Pero todo tiene un final, y en 2017 se tomo la decision de mudar la competencio de
+                plazas a escenarios. Esto no gustó mucho en el publico ya que se perdió una de las esencias que hacia
+                especial al evento.
+                Pasaron los meses y la relacion entre Muphasa e Alejo se iria deteriorando a raiz de varios conflicto.
+                Esto dio pie a que Alejo intentara impulsar su carrera musical bajo du seudónimo YSY A, y Muphasa
+                enbarcandose en su carrera como presentador de radio. <img src="../images/biografia/muphasaysy.jfif"
+                    alt="Muphasa a la izquierda, YSY A a la derecha" class="bio-jpg3 bio-jpg4">
+            </p>
         </div>
-        <div>
-            <h2>Su primera cancion</h2>
-            <a href="https://www.youtube.com/watch?v=sxoWqzSt-PU"><img src="../images/biografia/primer.jfif" alt="Portada de 0800" class="bio-jpg"></a>
+        <div class="bio-container">
+            <h2 id="primeraCancion">Su primera cancion</h2>
+            <a href="https://www.youtube.com/watch?v=sxoWqzSt-PU"><img src="../images/biografia/primer.jfif"
+                    alt="Portada de 0800" class="bio-jpg bio-jpg5"></a>
+            <p>Luego de su desviculacion con las competiciones, Alejo decidio poner todo en su carrera musical. Asi fue
+                como a finales del 2017, junto a la produccion de Veeyam, saca su primer tema <strong>"0800"</strong>.
+                <br>Gracias al exito de "0800" decidio lanzar nueva musica, como "Quiero Ganarme la Vida" u "Otro
+                Level", junto a Duki. Al ver que el exito musical que estaba teniendo Duki, decide realizar una gira
+                autogestionada por toda la provincia de Buenos Aires. A esta gira tambien se sumaria Neo Pistea, y
+                justos fomarian el grupo <strong>"Modo Diablo"</strong>.
+            </p>
         </div>
-
-        <!--linkear lo de la bio con el footer, no te olvides-->
-        <!--aksjdhrfkasdf-->
-
-
-
-
-
-
-
-
-
-
-
-
-
     </main>
-
-
-
-
-
-
-
-
-
-
-
-
-
 
     <span class="border-bottom d-block mt-1 mb-2 border-light"></span>
     <footer class="mt-3">
@@ -150,8 +159,8 @@
                 <div class="col-12 mb-4">
                     <h4 class="title">BIOGRAFIA</h4>
                     <ul class="list-unstyled">
-                        <li class="mb-2"><a href="#">Quinto Escalon</a></li>
-                        <li class="mb-2"><a href="#">Primera Cancion</a></li>
+                        <li class="mb-2"><a href="biografia.html#quintoEscalon">Quinto Escalon</a></li>
+                        <li class="mb-2"><a href="biografia.html#primeraCancion">Primera Cancion</a></li>
                     </ul>
                 </div>
                 <div class="col-12 mb-4">
