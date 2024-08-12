@@ -173,14 +173,12 @@ body {
   }
   .album-container.left img {
     margin: 20px;
-    border-radius: 10px;
   }
   .album-container.right {
     flex-direction: row-reverse;
   }
   .album-container.right img {
     margin: 20px;
-    border-radius: 10px;
   }
 }
 .container-img {
