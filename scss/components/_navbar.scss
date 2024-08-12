@@ -1,0 +1,62 @@
+// Navbar Toggler
+.navbar-toggler {
+    .navbar-toggler-icon {
+        background-image: url('data:image/svg+xml;charset=utf8,%3Csvg viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg"%3E%3Cpath stroke="rgba(255, 255, 255, 1)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M4 7h22M4 15h22M4 23h22"/%3E%3C/svg%3E');
+        background-size: 100%;
+        background-repeat: no-repeat;
+    }
+}
+
+// Logo Container
+.logo-container {
+    max-width: 100px;
+
+    img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+// Navbar Hover
+.hover-nav {
+    border-radius: 10px;
+    position: relative;
+
+    &:hover {
+        background-color: $hover-bg-color; // Hover en ul
+    }
+
+    li {
+        list-style: none;
+
+        &:hover {
+            background-color: $secondary-color; // Hover en li
+            border-radius: 10px;
+        }
+    }
+}
+
+// Dropdown Hover Effect
+.hover-dropdown {
+    position: relative;
+    display: inline-block;
+
+    &::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 2px;
+        background-color: $highlight-color;
+        transform: scaleX(0);
+        transform-origin: bottom right;
+        transition: transform 0.3s ease;
+    }
+
+    &:hover::after {
+        transform: scaleX(1);
+        transform-origin: bottom left;
+    }
+}
+

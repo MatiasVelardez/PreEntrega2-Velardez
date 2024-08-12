@@ -1,0 +1,27 @@
+.modoDiablo-container {
+    text-align: center;
+    padding: 1rem;
+}
+
+.md-img {
+    @include flex-center;
+    margin: 20px 0;
+
+    img {
+        max-width: 60%;
+        height: auto;
+    }
+}
+
+.md-img-group img {
+    width: 50%;
+}
+
+.md-img-duki img {
+    width: 60%;
+    max-width: 400px;
+}
+
+.md-img-neo-pistea img {
+    width: 40%;
+}

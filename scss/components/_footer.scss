@@ -1,0 +1,40 @@
+.text-center {
+    text-align: center;
+}
+
+.title {
+    text-decoration: underline;
+    text-decoration-color: $highlight-color;
+    padding-bottom: 15px;
+}
+
+.icon-container {
+    @include flex-center;
+    gap: 1rem;
+    margin-top: 1rem;
+
+    i {
+        font-size: 2rem;
+    }
+    .icon-link .bi-instagram {
+        color: $instagram-color;
+    }
+    
+    .icon-link .bi-spotify {
+        color: $spotify-color;
+    }
+}
+
+// Footer
+a {
+    color: $link-color;
+    text-decoration: none;
+
+    &:visited,
+    &:hover,
+    &:focus {
+        color: $link-hover-color;
+        text-decoration: none;
+    }
+}
+

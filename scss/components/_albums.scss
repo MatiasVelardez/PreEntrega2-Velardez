@@ -1,0 +1,45 @@
+// Album Container
+.album-container {
+    flex-direction: column;
+    text-align: center;
+
+    img {
+        margin-right: 0;
+        margin-bottom: 20px;
+        border-radius: 10px; 
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .album-container {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        margin-bottom: 20px;
+        padding: 15px;
+
+        &.left {
+            flex-direction: row;
+
+            img {
+                margin: 20px;
+                border-radius: 10px; 
+            }
+        }
+
+        &.right {
+            flex-direction: row-reverse;
+
+            img {
+                margin: 20px;
+                border-radius: 10px; 
+            }
+        }
+    }
+}
+
+// Image Container
+.container-img {
+    width: 100%;
+    margin-bottom: 20px;
+}

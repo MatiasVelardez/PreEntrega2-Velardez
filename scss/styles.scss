@@ -1,0 +1,176 @@
+@import 'abstracts/variables';
+@import 'abstracts/mixins';
+@import 'base/reset';
+@import 'base/typography';
+@import 'pages/index';
+
+// Media Queries
+@media screen and (min-width: 768px) {
+    .hover-nav,
+    .footer-container {
+        font-size: 25px;
+    }
+
+    h1 {
+        font-size: 80px;
+    }
+
+    h2 {
+        font-size: 40px;
+    }
+
+    p {
+        font-size: 30px;
+    }
+
+    .carousel-img {
+        height: 900px;
+    }
+
+    h3 {
+        font-size: 40px;
+        margin: 40px;
+    }
+
+    iframe {
+        width: 600px;
+        height: 600px;
+    }
+
+    h4 {
+        font-size: 25px;
+    }
+
+    .bio-jpg4 {
+        height: 400px;
+        width: 550px;
+    }
+
+    .bio-jpg5 {
+        height: 350px;
+        width: 350px;
+    }
+
+    .md-img-group img {
+        width: 50%;
+    }
+
+    .md-img-duki img {
+        width: 60%;
+        max-width: 400px;
+    }
+
+    .md-img-neo-pistea img {
+        width: 40%;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .navbar-nav {
+        margin-left: auto;
+    }
+
+    .hover-nav,
+    .footer-container {
+        font-size: 20px;
+    }
+
+    h1 {
+        font-size: 75px;
+    }
+
+    h2 {
+        font-size: 40px;
+        margin-bottom: 20px;
+    }
+
+    p {
+        font-size: 30px;
+    }
+
+    #carousel {
+        display: none;
+    }
+
+    .image-container {
+        height: 500px;
+    }
+
+    .custom-img {
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+    }
+
+    .iframe-container {
+        @include flex-center;
+        width: 100%;
+
+        iframe {
+            width: 10000px;
+            height: 600px;
+        }
+    }
+
+    .bio-jpg6 {
+        max-width: 35%;
+    }
+
+    .md-img-group img {
+        width: 25%;
+    }
+
+    .md-img-duki img {
+        width: 50%;
+        max-width: 400px;
+    }
+
+    .md-img-neo-pistea img {
+        width: 20%;
+    }
+
+    .container-img {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .album-container {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        margin-bottom: 20px;
+        padding: 15px;
+
+        &.left {
+            flex-direction: row;
+
+            img {
+                margin: 20px;
+            }
+        }
+
+        &.right {
+            flex-direction: row-reverse;
+
+            img {
+                margin: 20px;
+            }
+        }
+    }
+
+    .footer-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    .col-12 {
+        width: 200px;
+    }
+}
+
+@media (max-width: 1199px) {
+    .img-container {
+        display: none;
+    }
+}
