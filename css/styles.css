@@ -300,7 +300,7 @@ h2 {
 }
 
 p {
-  font-size: 30px;
+  font-size: 20px;
 }
 
 h3 {
@@ -380,7 +380,7 @@ h4 {
     margin-bottom: 20px;
   }
   p {
-    font-size: 30px;
+    font-size: 23px;
   }
   #carousel {
     display: none;
@@ -403,8 +403,15 @@ h4 {
     width: 10000px;
     height: 600px;
   }
+  .bio-jpg3 {
+    max-width: 700px;
+  }
+  .bio-jpg5 {
+    height: 300px;
+    width: 300px;
+  }
   .bio-jpg6 {
-    max-width: 35%;
+    max-width: 25%;
   }
   .md-img-group img {
     width: 25%;

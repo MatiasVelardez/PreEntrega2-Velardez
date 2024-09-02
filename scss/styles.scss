@@ -84,7 +84,7 @@
     }
 
     p {
-        font-size: 30px;
+        font-size: 23px;
     }
 
     #carousel {
@@ -111,8 +111,17 @@
         }
     }
 
+    .bio-jpg3{
+        max-width: 700px;
+    }
+    
+    .bio-jpg5{
+        height: 300px;
+        width: 300px;
+    }
+    
     .bio-jpg6 {
-        max-width: 35%;
+        max-width: 25%;
     }
 
     .md-img-group img {
